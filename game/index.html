@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midnight Vault — The Halcyon Job</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #0b1220; }
+  #game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" aria-label="Midnight Vault: a top-down stealth heist game. Sneak past guards and cameras, steal the Star of Halcyon, and escape through the skylight."></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<noscript><p style="color:#e8ecf4;font-family:system-ui,sans-serif;padding:2rem">Midnight Vault needs JavaScript to play.</p></noscript>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
